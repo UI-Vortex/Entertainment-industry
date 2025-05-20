@@ -1,0 +1,16 @@
+@media (max-width: 412px) {
+    .regis_container .regis_form {
+        width: 320px;
+        padding: 24px;
+        margin-right: 10px;
+    }
+    .regis_form .input_email {
+        width: 280px;
+    }
+    .regis_form .input_pass {
+        width: 280px;
+    }
+    .regis_form .input_pass2 {
+        width: 280px;
+    }
+}
