@@ -1,0 +1,16 @@
+@media (max-width: 412px) {
+    .login {
+        /* width: 400px; */
+    }
+    .login_container .login_form {
+        width: 350px;
+    }
+
+    .login_form .input_email {
+        width: 290px;
+    }
+    .login_form .input_pass {
+        width: 290px;
+    }
+    
+}
