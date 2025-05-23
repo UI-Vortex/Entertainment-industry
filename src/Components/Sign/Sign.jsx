@@ -3,9 +3,9 @@ import "./media.css";
 import movieLogo from "../../assets/Movie.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { TextField } from "@mui/material";
 
 function Sign() {
-
   const [signEmail, setSignEmail] = useState("");
   const [signPass, setSignPass] = useState("");
   const [signPass2, setSignPass2] = useState("");
@@ -13,13 +13,12 @@ function Sign() {
   const navigate = useNavigate();
 
   const handleSignClick = () => {
-
     localStorage.setItem("email", signEmail);
     localStorage.setItem("password", signPass);
     localStorage.setItem("password2", signPass2);
 
     navigate("/movie");
-  }
+  };
 
   return (
     <div>
@@ -49,7 +48,10 @@ function Sign() {
               onChange={(e) => setSignPass2(e.target.value)}
             />
 
-            <button className="regis_account" onClick={(e) => handleSignClick()}>
+            <button
+              className="regis_account"
+              onClick={(e) => handleSignClick()}
+            >
               <Link to="/movie">Create an account</Link>
             </button>
             <pre className="regis_go">
